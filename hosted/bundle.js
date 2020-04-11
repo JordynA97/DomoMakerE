@@ -39,6 +39,13 @@ var DomoForm = function DomoForm(props) {
       type: "text",
       name: "age",
       placeholder: "Domo Age"
+    }), /*#__PURE__*/React.createElement("label", {
+      htmlFor: "age"
+    }, "Nickname: "), /*#__PURE__*/React.createElement("input", {
+      id: "domoNickname",
+      type: "text",
+      name: "nickname",
+      placeholder: "Domo Nickname"
     }), /*#__PURE__*/React.createElement("input", {
       type: "hidden",
       name: "_csrf",
@@ -73,7 +80,9 @@ var DomoList = function DomoList(props) {
         className: "domoName"
       }, " Name: ", domo.name, " "), /*#__PURE__*/React.createElement("h3", {
         className: "domoAge"
-      }, " Age: ", domo.age, " "))
+      }, " Age: ", domo.age, " "), /*#__PURE__*/React.createElement("h3", {
+        className: "domoNickname"
+      }, "Nickname: ", domo.nickname))
     );
   });
   return (/*#__PURE__*/React.createElement("div", {
